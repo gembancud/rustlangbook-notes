@@ -5,6 +5,6 @@ fn main() {
     let animal = science::create_animal("Dog");
     let animal2 = science::Animal::new("Cat");
 
-    println!("{}", animal.name);
+    dbg!(animal);
     println!("{}", animal2.name);
 }
