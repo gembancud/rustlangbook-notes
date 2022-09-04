@@ -25,3 +25,17 @@ impl Point<f64> {
         self.x + self.y
     }
 }
+
+pub fn run() {
+    let pi32 = Point::new(1, 2);
+    println!("The int point is {:?}", pi32);
+
+    let int_sum = pi32.sum();
+    println!("The sum is {}", int_sum);
+
+    let pf64 = Point::new(1.0, 2.0);
+    println!("The floating point is {:?}", pf64);
+
+    let float_sum = pf64.sum();
+    println!("The sum is {}", float_sum);
+}
